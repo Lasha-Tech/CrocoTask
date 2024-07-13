@@ -1,0 +1,77 @@
+.date-time {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 10px;
+}
+
+.date-time-wrapper,
+.date-time-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.date-time-wrapper h1 {
+    color: #000;
+    font-weight: 600;
+    font-size: 25px;
+    text-shadow: 1px 1px #18954170;
+}
+ 
+.block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.block .top {
+    border-radius: 12px 12px 0px 0px;
+    transition: all ease-in-out 0.3s; 
+}
+
+.block .bottom {
+    border-radius: 0px 0px 12px 12px;
+    transition: all ease-in-out 0.3s; 
+}
+
+.block:hover .top {
+    border-radius: 0px 0px 12px 12px;
+    transition: all ease-in-out 0.3s; 
+}
+
+.block:hover .bottom {
+    border-radius: 12px 12px 0px 0px;
+    transition: all ease-in-out 0.3s; 
+}
+
+.top, .bottom {
+    min-width: 42.25px;
+    width: 100%;
+    height: 20px;
+    padding: 0px 10px;
+    cursor: default;
+}
+
+.top {
+    background: linear-gradient(#123f20, #3dc669 );
+    border-radius: 0px 0px 12px 12px;
+}
+
+.bottom {
+    background: linear-gradient( #3dc669, #123f20 );
+    border-radius: 12px 12px 0px 0px;
+    color: #00000000;
+}
+
+.date {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    bottom: -10px;
+    line-height: 20px;
+    text-align: center;
+}
