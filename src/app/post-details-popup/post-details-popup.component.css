@@ -1,0 +1,33 @@
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    text-wrap: nowrap;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #00000000;
+    color: #000;
+    border-color: #000;
+    transition: all ease-in-out 0.3s;
+}
+
+#popup {
+    display: absolute !important;
+    z-index: 9;
+    top: 0;
+
+    width: 50%;
+    height: 50%;
+    background-color: bisque;
+    border-radius: 16px;
+}

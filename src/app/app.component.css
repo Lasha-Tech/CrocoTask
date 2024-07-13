@@ -16,6 +16,7 @@ header {
 }
 
 .page-title {
+    width: fit-content;
     font-size: 25px;
     cursor: pointer;
     color: var(--main-color);
@@ -79,38 +80,41 @@ hr {
 
 .table-title {
     width: fit-content;
-    margin-bottom: 5px;
+    margin: 30px 0 5px;
     font-size: 25px;
 }
 
 .table {
+    overflow-x: auto;
+}
+
+.table table {
     border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 30px;
+    max-width: 100%;
 }
   
-.table td, .table th {
+.table table td, .table table th {
     border: 1px solid #ddd;
     padding: 8px;
     transition: all ease-in-out 0.3s;
 }
 
-.table tr:nth-child(even){
+.table table tr:nth-child(even){
     background-color: #f2f2f2;
     transition: all ease-in-out 0.3s;
 }
 
-.table tr{
+.table table tr{
     background-color: #fff;
     transition: all ease-in-out 0.3s;
 }
 
-.table tr:hover {
+.table table tr:hover {
     background-color: #ddd;
     transition: all ease-in-out 0.3s;
 }
 
-.table  th {
+.table table  th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -119,7 +123,7 @@ hr {
     transition: all ease-in-out 0.3s;
 }
 
-.table button {
+.table table button {
     background-color: #000;
     color: #fff;
     padding: 5px 10px;
@@ -134,10 +138,87 @@ hr {
     text-wrap: nowrap;
 }
 
-.table button:hover {
+.table table button:hover {
     transform: scale(1.1);
     background-color: #00000000;
     color: #000;
     border-color: #000;
     transition: all ease-in-out 0.3s;
+}
+
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 12vh;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px #00000070;
+    transition: all ease-in-out 0.3s;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.footer-title hr {
+    width: 2px;
+    margin-left: 10px;
+    border: 2px solid #fff;
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.3s;
+}
+
+.footer-title:hover hr {
+    margin-left: 26px;
+    transform: rotate(90deg);
+    transition: all ease-in-out 0.3s;
+}
+
+.footer-title:hover {
+    opacity: 0.8;
+    transition: all ease-in-out 0.3s
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact h1 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: -2px;
+}
+
+.social-media img {
+    min-width: 36px;
+    min-height: 36px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.social-media img:hover {
+    padding: 0px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 0px;
+    background-color: transparent;
 }
