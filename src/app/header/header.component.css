@@ -50,3 +50,13 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+@media (max-width: 653px) {
+    header {
+        justify-content: center;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+}

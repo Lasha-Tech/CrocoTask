@@ -3,6 +3,7 @@
     align-items: center;
     column-gap: 30px;
     row-gap: 10px;
+    flex-wrap: wrap;
 }
 
 .date-time-wrapper,
@@ -74,3 +75,36 @@
     line-height: 20px;
     text-align: center;
 }
+
+.block h1 {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.time-dots {
+    margin-top: 15px;
+}
+
+@media (max-width: 653px) {
+    .top, .bottom {
+        min-width: 32.25px;
+        width: 100%;
+        height: 14px;
+        padding: 0px 6px;
+    }
+
+    .date-time-wrapper h1 {
+        font-size: 16px;
+    }
+
+    .date {
+        font-size: 14px;
+        bottom: -4px;
+    }
+
+    .date-time {
+        justify-content: center;
+        align-items: center;
+    }
+}
+

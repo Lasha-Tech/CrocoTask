@@ -9,10 +9,21 @@
     font-family: 'Open Sans', 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
-body {
-  width: 50%;
-  margin: 0 auto;
+@media (min-width: 1024px) {
+  body {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
+
+@media (max-width: 1024px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
 
 .overlay {
   position: fixed;

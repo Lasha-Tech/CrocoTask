@@ -68,3 +68,33 @@
     transition: all ease-in-out 0.3s;
 }
 
+
+@media (max-width: 653px) {
+    .table-title {
+        margin: 20px 0px 5px;
+        font-size: 16px;
+    }
+
+    .table {
+        padding: 0px;
+        font-size: 14px;
+    }
+
+    .table table td, .table table th {
+        padding: 4px;
+        font-size: 14px;
+    }
+
+    .table table  th {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .table table button {
+        padding: 3px 6px;
+        outline: none;
+        font-size: 12px;
+    }
+}
+
+
