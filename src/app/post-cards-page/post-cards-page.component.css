@@ -1,0 +1,69 @@
+.page-title {
+    font-size: 25px;
+    margin: 0 20px 30px;
+}
+
+.card-wrapper {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card {
+    width: 30%;
+    border-radius: 16px;
+    background: url("./crocoback.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: fit-content;
+    cursor: pointer;
+    box-shadow: 4px 4px 2px #18954190;
+    transition: all ease-in-out 0.3s;
+}
+
+.card:hover {
+    box-shadow: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.card-overlay {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px 15px;
+    background-color: #00000010;
+    border-radius: 16px;
+    transition: all ease-in-out 0.3s;
+}
+
+.card-overlay:hover {
+    background-color: #00000090;
+    transition: all ease-in-out 0.3s;
+}
+
+.card-overlay .card-title  {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+    transition: all ease-in-out 0.3s;
+}
+
+.card-overlay:hover .card-title {
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+}
+
+.card-overlay .card-description {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000;
+    transition: all ease-in-out 0.3s;
+}
+
+.card-overlay:hover .card-description {
+    color: #fff;
+    background-color: transparent;
+    transition: all ease-in-out 0.3s;
+}
