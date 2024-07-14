@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './post-details-popup.component.css'
 })
 export class PostDetailsPopupComponent {
-
+  datad = fetch('https://jsonplaceholder.typicode.com/')
+  .then(response => response.json())
+  .then(json => console.log(json));
+  
 }
