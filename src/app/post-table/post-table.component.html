@@ -2,30 +2,18 @@
 <div class="table">
 <table>
   <tr>
-    <th>User name</th>
-    <th>Post title</th>
+    <th>Username</th>
+    <th>Post Title</th>
     <th>Details</th>
   </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
+  <tr *ngFor="let post of posts">
+    <td>{{post.title}}</td>
+    <td>{{post.body}}</td>
     <td>
-      <button>Details</button>
+      <button (click)="isDetailsOPen = true">Details</button>
     </td>
   </tr>
-  <tr>
-    <td>Berglunds snabbköp</td>
-    <td>Christina Berglund</td>
-    <td>
-      <button>Details</button>
-    </td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>
-      <button>Details</button>
-    </td>
-  </tr>
+
 </table>
+  <app-posts-popup *ngIf="isDetailsOPen" (close)="isDetailsOPen = false"/>
 </div>

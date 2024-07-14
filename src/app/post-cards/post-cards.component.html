@@ -1,0 +1,12 @@
+<h1 class="page-title">User posts</h1>
+
+<div class="card-wrapper">
+  <div class="card" *ngFor="let post of posts">
+    <div class="card-overlay">
+      <h2 class="card-title">{{ post.title }}</h2>
+
+      <p class="card-description">{{ post.body | slice:0:50 }}<span class="bold-text">{{ post.body | slice:50 }}</span></p>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.search-title {
+    font-size: 20px;
+    color: #000000;
+    margin: 0px 20px 6px;
+}
+
+.search-div {
+    width: 50%;
+    border-radius: 16px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.search-div:hover {
+    border-color: #000000;
+    transition: all ease-in-out 0.3s;
+}
+
+.search-div input {
+    width: 97%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    font-family: inherit;
+    padding-right: 15px;
+}
+
+.search-div svg {
+    min-width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.search-div svg path {
+    color: var(--main-color);
+    transition: all ease-in-out 0.3s;
+}
+
+.search-div:hover svg path {
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+}
