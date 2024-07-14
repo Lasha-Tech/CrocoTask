@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import {PostsArray} from "../../models/posts.interface";
 import {UsersArray} from "../../models/users.interface";
 
@@ -8,6 +8,7 @@ import {UsersArray} from "../../models/users.interface";
   providedIn: 'root',
 })
 export class DataService {
+
   private usersUrl = 'https://jsonplaceholder.typicode.com/users';
   private postsUrl = 'https://jsonplaceholder.typicode.com/posts';
 

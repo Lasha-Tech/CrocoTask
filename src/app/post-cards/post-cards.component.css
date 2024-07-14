@@ -9,12 +9,12 @@
   flex-wrap: wrap;
   gap: 24px;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .card {
   width: 30%;
-  min-height: 320px;
+  min-height: 100%;
   border-radius: 16px;
   background: url("./crocoback.png");
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 
 .card-overlay {
   width: 100%;
-  min-height: 320px;
+  min-height: 100%;
   padding: 10px 20px 15px;
   background-color: #00000010;
   border-radius: 16px;

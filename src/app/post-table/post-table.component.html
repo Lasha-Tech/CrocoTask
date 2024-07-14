@@ -7,13 +7,13 @@
     <th>Details</th>
   </tr>
   <tr *ngFor="let post of posts">
+    <td>{{post?.userName?.name}}</td>
     <td>{{post.title}}</td>
-    <td>{{post.body}}</td>
     <td>
-      <button (click)="isDetailsOPen = true">Details</button>
+      <button (click)="onSelectPost(post)">Details</button>
     </td>
   </tr>
 
 </table>
-  <app-posts-popup *ngIf="isDetailsOPen" (close)="isDetailsOPen = false"/>
+  <app-posts-popup *ngIf="isDetailsOPen" (close)="isDetailsOPen = false" [postDetail]="selectedPost"/>
 </div>

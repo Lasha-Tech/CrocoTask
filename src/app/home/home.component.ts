@@ -8,6 +8,7 @@ import {DataService} from "../service/data.service";
 import {combineLatest, map} from "rxjs";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {UsersArray} from "../../models/users.interface";
+import { addUser } from '../post-page/helpers/addUser.helper';
 
 @Component({
   selector: 'app-home',
@@ -27,8 +28,11 @@ export class HomeComponent implements OnInit{
       this.dataService.getPosts(),
       this.dataService.getUsers()
     ]).pipe(map(([posts,users]) => {
-        this.posts = posts;
+      let changedPosts = addUser(posts,users)
+      
+        this.posts = changedPosts;
         this.users = users;
+        
         this.cdr.markForCheck()
     })).subscribe()
   }

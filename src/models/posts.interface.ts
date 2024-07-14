@@ -1,3 +1,5 @@
+import { Users } from "./users.interface"
+
 export type PostsArray = Posts[]
 
 export interface Posts {
@@ -5,4 +7,5 @@ export interface Posts {
   id: number
   title: string
   body: string
+  userName?:Users | null
 }

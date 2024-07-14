@@ -2,7 +2,7 @@ import {Component, Input} from '@angular/core';
 import { PostDetailsPopupComponent } from '../post-details-popup/post-details-popup.component';
 import { HeaderComponent } from '../header/header.component';
 import {Router} from "@angular/router";
-import {PostsArray} from "../../models/posts.interface";
+import {Posts, PostsArray} from "../../models/posts.interface";
 import {CommonModule, NgForOf} from "@angular/common";
 import {PostsPopupComponent} from "./posts-popup/posts-popup.component";
 
@@ -17,4 +17,10 @@ import {PostsPopupComponent} from "./posts-popup/posts-popup.component";
 export class PostTableComponent {
   @Input() posts!:PostsArray
   isDetailsOPen = false
+  selectedPost:any = []
+
+  onSelectPost(post:any) {
+    this.selectedPost = post
+    this.isDetailsOPen = true
+  }
 }
