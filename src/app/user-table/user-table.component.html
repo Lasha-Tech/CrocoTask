@@ -17,10 +17,12 @@
       <td>{{user.email}}</td>
       <td>{{user.company.name}}</td>
       <td>
-        <button (click)="navigateToDetails(user.id)">Posts</button>
+        <button (click)="navigateToDetails(user.id,'/users-posts')">Posts</button>
       </td>
       <td>
-        <button>Todo list</button>
+        <a (click)="navigateToDetails(user.id,'/todo')" >
+          <button>Todo list</button>
+        </a>
       </td>
     </tr>
   </table>

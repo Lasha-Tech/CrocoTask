@@ -1,1 +1,9 @@
-<p>todolist-page works!</p>
+<h1 class="page-title">Todo list</h1>
+
+<h1 class="completed">Tasks</h1>
+<ol>
+    <li class="completed-li" *ngFor="let cTodos of todos" [ngClass]="{
+        'completed': cTodos.completed        ,
+        'uncompleted': !cTodos.completed,
+    }">{{cTodos?.title}}</li>
+</ol>

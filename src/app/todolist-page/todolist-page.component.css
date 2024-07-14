@@ -1,0 +1,51 @@
+.page-title {
+    font-size: 25px;
+    margin: 0 20px 30px;
+    color: var(--main-color);
+    text-shadow: 2px 2px #00000030;
+}
+
+.completed, .uncompleted {
+    font-size: 22px;
+    margin: 15px 20px 5px;
+}
+
+.completed {
+    color: #000;
+}
+
+.uncompleted {
+    color: #fff !important;
+    background-color: rgb(196, 51, 51) !important;
+    margin-top: 30px;
+}
+
+.completed-li,
+.uncompleted-li {
+    margin: 15px 0px 15px 40px;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.completed-li::marker {
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.uncompleted-li {
+    background-color: rgb(136, 16, 16) !important;
+}
+
+li {
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+li:hover {
+    padding-left: 40px;
+    opacity: 0.7;
+    transition: all ease-in-out 0.3s;
+}
